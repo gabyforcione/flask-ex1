@@ -2,11 +2,13 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route("/")
 def index():
-    return "Oii"
+    return f"Olá"
 
-@app.route('/hello')
-def hello():
-    return "heloo"
-    
+
+@app.route("/versao")
+def versao():
+    versao = "1.1.0"
+    return f"App v{versao}", 200
+
