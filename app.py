@@ -26,6 +26,4 @@ def quadrado(n):
 def home():
     return redirect("/", code=302)
 
-@app.route("/pagina")
-def pagina():
-    return render_template("pagina.html"), 200
+
